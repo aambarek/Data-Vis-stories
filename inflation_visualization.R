@@ -119,6 +119,6 @@ inflation_lastmonth <- inflation_contributions %>%
 final_plot <- inflation_trend / inflation_lastmonth +
   plot_layout(heights = c(1, 3))
 
-jpeg(file = "inflation_story.png", width = 1200, height = 1800)
+png(file = "Stories/inflation_story.png", width = 1200, height = 1800)
 final_plot
 dev.off()
